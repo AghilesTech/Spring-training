@@ -3,24 +3,23 @@
  */
 package com.formation.ajc.spring.ioc;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
 /**
  * @author AgLounes
  *
  */
+@Component
 public class Guitarist implements IMusicien {
 
+	@Autowired
+	@Qualifier("myGuitar")
 	private IInstrument instrument;
+	
 	private String guitaristName;
 
-	/**
-	 * @param instrument
-	 * @param guitaristName
-	 */
-	public Guitarist(IInstrument instrument, String guitaristName) {
-		super();
-		this.instrument = instrument;
-		this.guitaristName = guitaristName;
-	}
 
 	@Override
 	public void play() {
