@@ -12,7 +12,9 @@ import org.springframework.stereotype.Component;
  */
 @Component("myGuitar")
 public class Guitar implements IInstrument {
+	
 	public String toString() {
+		System.out.println(" inside toString ");
 		return "GLINK GLINK GLINK";
-		}
+	}
 }

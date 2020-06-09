@@ -10,4 +10,7 @@ package com.formation.ajc.spring.ioc;
 public interface IMusicien {
 	
 	public void play();
+	
+	public void play2();
+
 }

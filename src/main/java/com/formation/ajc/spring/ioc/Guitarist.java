@@ -23,8 +23,14 @@ public class Guitarist implements IMusicien {
 
 	@Override
 	public void play() {
-			System.out.println("The guitarist " + this.guitaristName + " plays : " +
+			System.out.println("The guitarist  plays : " +
 					this.instrument);		
+	}
+	
+	@MyFirstAnnotation
+	@Override
+	public void play2() {
+			System.out.println(" play 2 method");		
 	}
 
 	/**
